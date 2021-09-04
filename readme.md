@@ -26,7 +26,7 @@ $ make build
 
 ```
 
-you can list more commands shortcut by running the help command:
+you can list more commands shortcuts by running the help command:
 
 ```
 $ make help
@@ -80,7 +80,7 @@ The API has 4 endpoints:
     "coordinates":coordinates
 }
 ```
- where   ```pathname ``` is a string and ```coordinates ``` is  an array of 4 dimension arrays of floats
+ where   ```pathname ```  is a string and  ```coordinates ```  is  an array of 4 dimension arrays of floats
 
 example:
 
@@ -181,7 +181,7 @@ Content-Length: 40
 
  example:
 
- curl &nbsp; -i &nbsp;  -H &nbsp; 'Accept: application/json'&nbsp;  -d &nbsp;  http://localhost:10000/getDuration?path=path1
+ curl &nbsp; -i &nbsp;  -H &nbsp; 'Accept: application/json' &nbsp;  http://localhost:10000/getDuration?path=path1
 
 will return:
 
@@ -225,7 +225,7 @@ The  web app is UI to represent a linestring in a map using leaflet.js including
    use the select input to choose the path(s) you want to visualize
 *  save a new path (add new feature to the linetrings featurecollection):
 
-  click the "add new path" button a modal will show up and allow you to create and save a new path
+   click the "add new path" button a modal will show up and allow you to create and save a new path
 
 
 
