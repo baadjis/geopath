@@ -80,7 +80,7 @@ The API has 4 endpoints:
     "coordinates":coordinates
 }
 ```
- where   ```pathname ```  is a string and  ```coordinates ```  is  an array of 4 dimension arrays of floats
+ where   ```pathname ```  is a string and  ```coordinates ```  is  an array of 4 dimensions arrays of floats
 
 example:
 
