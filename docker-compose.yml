@@ -11,7 +11,8 @@ services:
       - "10000:10000"
   
   app2:
+    image: baadjis/geopath-web:latest 
     build:
       context: . 
       dockerfile: Dockerfile
-    image: baadjis/geopath-web:latest # goes repository on Docker Hub
+    
