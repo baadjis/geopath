@@ -3,13 +3,15 @@ version: "3.7"
 
 services:
   app:
-    image: geopath-webserver
+    image: geopath-web
     build: 
+      context: .
       dockerfile: Dockerfile
     ports:
       - "10000:10000"
   
   app2:
-    build: 
+    build:
+      context: . 
       dockerfile: Dockerfile
-    image: baadjis/geopath-webserver  # goes repository on Docker Hub
+    image: baadjis/geopath-web:latest # goes repository on Docker Hub
