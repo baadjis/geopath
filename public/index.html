@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    <link rel="stylesheet" href="../statics/index.css"/>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="new-path-modal">
+            <form class="new-path-modal-content">
+
+                <span class="close">&times;</span>
+                <h1>Add new path</h1>
+                <hr>
+                <br>
+                <label for="new-path-name">path name:</label><br>
+                <input type="text" id="new-path-name" placeholder="post your path name" required />
+                <br>
+                <br>
+                <div id="coordinates-container">
+                    <div class="coordinates">
+                        <input type="text" placeholder="longitude" onkeypress="return isNumberKey(event)" required />
+                        <input type="text" placeholder="latitude" onkeypress="return isNumberKey(event)" required />
+                        <input type="text" placeholder="altitude" onkeypress="return isNumberKey(event)" required />
+                        <input type="text" placeholder="timestamp" onkeypress="return isNumberKey(event)" required />
+                    </div>
+                    <br>
+
+                    <div class="coordinates">
+                        <input type="text" placeholder="longitude" onkeypress="return isNumberKey(event)" required />
+                        <input type="text" placeholder="latitude" onkeypress="return isNumberKey(event)" required />
+                        <input type="text" placeholder="altitude" onkeypress="return isNumberKey(event)" required />
+                        <input type="text" placeholder="timestamp" onkeypress="return isNumberKey(event)" required />
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <button type="button" id="add-new-position-button">
+                    +Add new coordinates</button>
+
+
+                <br>
+
+                <br>
+                <br>
+
+                <button type="submit" id="add-new-path-button">Submit</button>
+
+            </form>
+        </div>
+
+
+        <button type="button" id="add-new-path-form-button">+ add new path</button>
+
+        <div class="right">
+            <h1>your paths</h1>
+            <div class="select-container">
+                <label for="path-select">select path:</label><br>
+                <select name="" id="path-select">
+                    <option value="all" selected>all</option>
+
+                </select>
+            </div>
+            <br>
+            <div id="path-data-container">
+
+            </div>
+        </div>
+        <div class="left">
+            <div id="map">
+                <canvas></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script type="text/javascript" src="../statics/index.js"></script>
+
+</body>
+
+</html>
